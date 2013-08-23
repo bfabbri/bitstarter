@@ -144,61 +144,126 @@
 	  </div>
 	  <div class="row-fluid pitch">
 	    <div class="span5 offset1 video">
-	      <img class="img-polaroyd" src="http://placehold.it/480x300">
+	      <img class="img-polaroid" src="http://placehold.it/480x300">
 	    </div>
 
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
-	</div>
-      </div>
-      <div class="row heading">
-	<div class="span12">
-	  <h1>My project</h1>
-	</div>
-      </div>
-      <div class="row subheading">
-	<div class="span12">
-	  <p class="lead">This is my first Bitstarter Project.</p>
-	</div>
-      </div>				 
-      <div class="row pitch">
-	<div class="span6 video">
-	  Video
-	</div>
-	<div class="span6">
-	  <div class="thermometer">
-	    Thermometer
+	    <!-- We define a new 'actions' div to contain statistics, order and share buttons -->
+	    <div class="span5 actions">
+	      <div class="span8 offset2">
+		<div class="statistics">
+		  <div class="span4">
+		    <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
+		    <div class="linediv-l">
+		      <h3>1000</h3> <p>backers</p>
+		      </div>
+		  </div>
+		  <div class="span4">
+		    <div class="linediv-c">
+		      <h3>$6000</h3> <p>of $10,000</p>
+		    </div>
+		  </div>
+		  <div class="span4">
+		    <div class="linediv-r">
+		      <h3>10</h3> <p>days left</p>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="span10 offset1">
+		<!-- Bootstrap progress bar -->
+		<!-- http://twitter.github.io/bootstrap/components.html#progress -->
+		<div class="thermometer progress active">
+		  <div class="bar bar-success" style="width: 60%;"></div>
+		  <div class="bar bar-warning" style="width: 40%;"></div>
+		</div>  
+	      </div>		
+	      <div class="span6 offset3 order">
+		<!-- Standard botstrap button -->
+		<!-- http://twitter.github.io/bootstrap-social-buttons -->
+		<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+		<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	      </div>
+	    </div>
 	  </div>
-	  <div class="order">
-	    Order
+  
+	  <!-- Beyond this part the marketing copy begins -->
+	  <!-- http://developer.mozilla.org.en-US/docs/Web/CSS/text-align -->
+	  <!-- http://twiterr.github.io/bootstrap/base-css.html#images -->
+	  <!-- http://placehold.it -->
+	  <div class="row-fluid section1">
+	    <div class="span5 offset1 asset">
+	      <img class="img-polaroid" src="http://placehold.it/480x300">
+	    </div>
+	    <div class="span5 copy">
+	      <p>
+		Aqui vai exemplo de texto para vender o meu super produto
+		juntamente com um ano interamente gratis de assinatura.
+		Ligando ja voce ainda concorre a u super premio secreto.
+	      </p>		
+	    </div>
 	  </div>
-	  <div class="social">
-	    Social
+
+	  <div class="row-fluid section2">
+	    <div class="span5 offset1 copy copy-right">
+	      <p>
+		Essa eh mais uma novidade para voce cliente premium.
+		Voce pode montar a sua camiseta polo com o tecido de sua escolha,
+		alem de estampa personalizada e bordada nas mangas,
+		colarinho ou peito.
+	      </p>	
+	    </div>  
+	    <div class="span5 asset">
+	      <img class="img-polaroid" src="http://placehold.it/480x300">
+	    </div>  
 	  </div>
-	</div>
-      </div>
-      <div class="row section1">
-	<div class="span12">
-	  Marketing section1
-	</div>
-      </div>
-      <div class="row section2">
-	<div class="span12">
-	  Marketing section2
-	</div>
-      </div>
-      <div class="row faq">
-	<div class="span12">
-	  FAQ
-	</div>
-      </div>
-      <div class="row footer">
-	<div class="span12">
-	  Footer
-	</div>
-      </div>
-    </div>
+
+	  <!-- For the FAQ we introduce a little bit of JS, using the accordion -->
+	  <!-- This brings in tjquery.js and bootstrap.js as dependencies -->
+	  <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+	  <div class="row-fluid faq">
+	    <div class="span10 offset1">
+	      <h3>FAQ</h3>
+	      <div class="accordion" id="accordion2">
+		<div class="accordion-group">
+		  <div class="accordion-heading">
+		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="collapseOne">		  
+		      What does FAQ stand for?
+		    </a>
+		  </div>
+		    <div id="collapseOne" class="accordion-body collapse">
+		      <div class="accordion-inner">
+			Frequently asked questions
+		      </div>		
+		    </div>
+		  </div>
+		  <div class="accordion-group">
+		    <div class="accordion-heading">
+		      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="collapseTwo">
+			What's a frequently asked question?
+		      </a>
+		    </div>
+		    <div id="collapseTwo" class="accordion-body collapse">
+		      <div class="accordion-inner">
+			A question tha is commonly asked by users.
+		      </div>		
+		    </div>
+		  </div>
+		</div>
+	      </div>	  
+  
+	    </div>
+
+	    <!-- Not crucial, but we put this under a CC By-SA 3.0 license -->
+	    <!-- http://creativecommons.org/licenses/ -->
+	    <div class="row-fluid footer">
+	      <div class="span12">
+		<p> This work is licensed under
+		  the <a href="http://creativecommon.org/licenses/by-sa/3.0/">CC
+		    By-SA 3.0
+		  </a>, without all the cruft that would otherwise be
+		  put at the bottom of the page</p>
+		</div>
+	      </div>
+	    </div>
   </body>
 </html>
